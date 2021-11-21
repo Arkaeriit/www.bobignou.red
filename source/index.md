@@ -8,6 +8,9 @@ As of now, there is not much to find here. If you want to see nicer things I mad
 
 If you want some fun, you could always type the command:
 ```shell
-ssh -p 2244 snake@bobinou.red
+ssh -p 2244 snake@bobignou.red
 ```
+
+## Other services
+On this server, you can also find a [Cyberlander text board](https://cyberland.bobignou.red).
 
