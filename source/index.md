@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bobignou.red
-date: 2020-10-17
+date: 2020-12-13
 ---
 ## What to find here
 On this blog I mainly speak about DevOps or programming related subjects that touch too many part of a system to be included in a git repository.
