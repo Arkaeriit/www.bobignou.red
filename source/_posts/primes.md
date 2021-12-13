@@ -9,8 +9,8 @@ Algorithms made to find primes number are a good way to try out a new programmin
 ## Downloadable lists
 
 Here are multiples files with a decent number of prime numbers in them.
-* [First 1000000 primes numbers](/txt/1000000_primes)
-* [First 10000000 primes numbers](/txt/10000000_primes)
+* [First 1000000 primes numbers](/big_files/1000000_primes)
+* [First 10000000 primes numbers](/big_files/10000000_primes)
 
 ## List of the first 1000 primes numbers
 
