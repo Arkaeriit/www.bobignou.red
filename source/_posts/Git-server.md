@@ -78,3 +78,6 @@ In the comments of the file `config.yaml` it is written that only the repositori
 ### Using the local repository
 Once all of this is done, you can use the remote just as any other remote Git server such as GitHub, GitLab or Gitolite.
 
+## Web interface
+By default, Soft Serve only presents a SSH interface. It is a very nice SSH interface but it is a bit of a shame that there is no web interface. To fix this, I made [Soft Serve Monitor](https://github.com/Arkaeriit/Soft-Serve_Monitor). This is a Flask server that presents a web page with a list of all the repositories on the Soft Serve sever.
+
