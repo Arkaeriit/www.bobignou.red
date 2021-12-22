@@ -11,6 +11,8 @@ If you want to see nicer things I made, I should redirect you to my [Github](htt
 ## Other services
 On this server, you can also find a [Cyberlander text board](https://cyberland.bobignou.red).
 
+I also host my [personal Git server](https://git.bobignou.red).
+
 If you want some fun, you could always type the command:
 ```shell
 ssh -p 2244 snake@bobignou.red
