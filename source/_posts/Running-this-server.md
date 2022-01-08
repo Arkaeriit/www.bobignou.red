@@ -3,10 +3,10 @@ title: Running this server
 date: 2021-11-18 09:20:27
 tags:
 ---
-Multiples tools and components are used in this server to make it run and accessible from the internet. I want to describe them here in order to help me reconfigure a similar server in the future if needed. It might also be useful to anyone searching to run a similar web server themselves.
+Multiples tools and components are used in this server to make it run and accessible from the internet. I want to describe them here to help me reconfigure a similar server in the future if needed. It might also be useful to anyone searching to run a similar web server themselves.
 
 ## Domain name
-In order to easily access the server for the outside, a domain name is very handy I purchased bobignou.red at [Namecheap](https://www.namecheap.com/). There is a lot of other alternative but I am telling that because I used use some of their other services.
+In order to easily access the server for the outside, a domain name is very handy I purchased bobignou.red at [Namecheap](https://www.namecheap.com/). There is a lot of other alternatives but I am telling you that because I use some of their other services.
 
 ## Dynamic DNS
 As I don't have a static IP address, linking the domain name to my IP address is not trivial. I have to rely on dynamic DNS.
@@ -14,7 +14,7 @@ As I don't have a static IP address, linking the domain name to my IP address is
 To do so, I use a combination of Namecheap's advanced DNS and DDclient.
 
 ### Namecheap's advanced DNS
-On the page to manage a domain name in Namecheap website, there is an 'Advanced DNS' page. At the bottom of this page, there is a 'Dynamic DNS' category. Firstly, you should enable it with the little oval button. You are given a Dynamic DNS Password, write it down. Lastly, you must add a record for each subdomain you want to use. To do so, press the 'add new record' button. Under the 'Host' column, you can can write the name of the subdomain (for example, `@` for `bobignou.red` or `www` for `www.bobignou.red`) and you should write a dummy IP in the 'Value' column.
+On the page to manage a domain name in the Namecheap website, there is an 'Advanced DNS' page. At the bottom of this page, there is a 'Dynamic DNS' category. Firstly, you should enable it with the little oval button. You are given a Dynamic DNS Password, write it down. Lastly, you must add a record for each subdomain you want to use. To do so, press the 'add new record' button. Under the 'Host' column, you can write the name of the subdomain (for example, `@` for `bobignou.red` or `www` for `www.bobignou.red`) and you should write a dummy IP in the 'Value' column.
 
 ### DDclient
 On the server, install DDclient. You configure it with the configuration file `/etc/ddclient.conf`. To configure a subdomain, write the following configuration:
@@ -26,19 +26,19 @@ login=<domain name>
 password='<Dynamic DNS Password>'
 <Host>
 ```
-Write one of such configuration for each subdomain.
+Write one of such configurations for each subdomain.
 
 Then, you can start dd client with systemd through the commands `systemctl enable ddclient` and `systemctl start ddclient`. You can check that it works well in two ways.
 * You can check the result of `systemctl status ddclient`.
-* You can verify that your IP have been added in the column 'Value' in Namecheap's advanced DNS.
+* You can verify that your IP has been added in the column 'Value' in Namecheap's advanced DNS.
 
 ## SSL certificates
 In order to use HTTPS, you need SSL certificates. Fortunately, a tool named certbot made by let's encrypt makes it really easy to get. You just need to install certbot that is probably in your distribution's repository. Before starting, you must make sure that using your domain name, one can reach your server (you must enable port forwarding in your router for ports 80 and 443) and that no program uses those ports on your server.
 
 Then you just have to type the command `certbot certonly --standalone -d <your first domain name> -d <your second domain name> ...` and follow the steps.
 
-## The Nginx web server
-I Use Nginx as the web server. Each interface is in a `server` block. All those blocks are in a `http` block. I did not customized the `http` block, I kept the default one which work. The file for this blocks are in the folder `/srv/data/www/blog`. The layout of the file system is the same as the layout of the website.
+## The Nginx webserver
+I use Nginx as the webserver. Each interface is in a `server` block. All those blocks are in a `http` block. I did not customize the `http` block, I kept the default one which work. The files for these blocks are in the folder `/srv/data/www/blog`. The layout of the file system is the same as the layout of the website.
 
 ### Basic HTTP server
 On port 80, I present the site in HTTP, under the domain name `bobignou.red`. The configuration is the following:
@@ -71,7 +71,7 @@ server {
 Once again, it is very simple.
 
 ### HTTPS server
-As we are in the 21st century, I wanted to also present a HTTPS server. Its configuration is the following:
+As we are in the 21st century, I wanted to also present an HTTPS server. Its configuration is the following:
 ```
 server {
         listen              443 ssl;
@@ -119,7 +119,6 @@ After=network.target
 
 [Service]
 Type=simple
-# Another Type: forking
 User=root
 Group=root
 WorkingDirectory=/srv/data/www/cyberland
@@ -161,5 +160,5 @@ server {
 It looks a lot like the configuration of the reverse proxy for the blog.
 
 ## Website generation
-The pages in this we website are generated with [hexo](https://github.com/hexojs/hexo). I mostly used the default configuration by following the steps in the official documentation.
+The pages in this website are generated with [hexo](https://github.com/hexojs/hexo). I mostly used the default configuration by following the steps in the official documentation.
 

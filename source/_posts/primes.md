@@ -4,18 +4,19 @@ date: 2021-11-01 20:07:58
 tags:
 ---
 
-Algorithms made to find primes number are a good way to try out a new programming language. I include here some list of number to compare the output of your programs.
+Algorithms made to find primes numbers are a good way to try out a new programming language. I include here some lists of numbers to compare the output of your programs.
 
 ## Downloadable lists
 
 Here are multiples files with a decent number of prime numbers in them.
+Here are multiple files with a decent number of prime numbers in them.
 * [First 1 000 000 primes numbers](/big_files/1000000_primes)
 * [First 10 000 000 primes numbers](/big_files/10000000_primes)
 * [First 100 000 000 primes numbers](/big_files/100000000_primes)
 
 ## List of the first 1000 primes numbers
 
-For the sake of convenience, you can find bellow a list the first 1000 primes numbers.
+For the sake of convenience, you can find below a list of the first 1000 primes numbers.
 
 * 2
 * 3
