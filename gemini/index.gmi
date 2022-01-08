@@ -31,3 +31,8 @@ If you want some fun, you could always type the command:
 ```
 ssh -p 2244 snake@bobignou.red
 ```
+
+## Contact
+
+If you can contact me, you can send an email to maxbouillot@gmail.com.
+

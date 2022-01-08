@@ -20,3 +20,7 @@ ssh -p 2244 snake@bobignou.red
  
 If you prefer Gemini over the web, you can find this blog as a Gemini capsule at the URLs `gemini.bobignou.red` and `bobignou.red`.
 
+## Contact
+
+If you can contact me, you can send an email to <a href = "mailto: maxbouillot@gmail.com">maxbouillot@gmail.com</a>.
+
