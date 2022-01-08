@@ -18,3 +18,5 @@ If you want some fun, you could always type the command:
 ssh -p 2244 snake@bobignou.red
 ```
 
+If you prefer Gemini over the web, you can find this blog as a Gemini capsule at the URLs `gemini.bobignou.red` and `bobignou.red`.
+

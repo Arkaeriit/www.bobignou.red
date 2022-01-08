@@ -2,6 +2,7 @@
 
 ## Articles
 
+=> posts/Gemini.gmi Gemini
 => posts/Git-server.gmi Git server
 => posts/Running-this-server.gmi Running this server
 => posts/primes.gmi Prime numbers
@@ -11,19 +12,19 @@
 
 On this blog I mainly speak about DevOps or programming related subjects that touch too many part of a system to be included in a git repository.
 
-If you want to see nicer things I made, I should redirect you to my Github[4].
+If you want to see nicer things I made, I should redirect you to my Github.
 
-=> https://github.com/Arkaeriit 4: github.com/Arkaeriit
+=> https://github.com/Arkaeriit github.com/Arkaeriit
 
 ## Other services
 
-On this server, you can also find a Cyberlander text board[5].
+On this server, you can also find a Cyberlander text board.
 
-=> https://cyberland.bobignou.red 5: cyberland.bobignou.red
+=> https://cyberland.bobignou.red cyberland.bobignou.red
 
-I also host my personal Git server[6].
+I also host my personal Git server.
 
-=> https://git.bobignou.red 6: git.bobignou.red
+=> https://git.bobignou.red git.bobignou.red
 
 If you want some fun, you could always type the command:
 
