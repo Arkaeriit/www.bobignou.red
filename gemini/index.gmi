@@ -1,12 +1,10 @@
 # Bobignou.red
 
-## Articles
-
-=> posts/Gemini.gmi Gemini
-=> posts/Git-server.gmi Git server
-=> posts/Running-this-server.gmi Running this server
-=> posts/primes.gmi Prime numbers
-=> posts/BouingBouing.gmi BouingBouing
+=> posts/Gemini.gmi              2022-01-08 - Gemini
+=> posts/Git-server.gmi          2021-12-09 - Git server
+=> posts/Running-this-server.gmi 2021-11-18 - Running this server
+=> posts/primes.gmi              2021-11-01 - Prime numbers
+=> posts/BouingBouing.gmi        2021-10-28 - BouingBouing
 
 ## What to find here
 
