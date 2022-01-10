@@ -8,7 +8,7 @@
 
 ## What to find here
 
-On this blog, I mainly speak about DevOps or programming-related subjects that touch too many parts of a system to be included in a git repository. 
+On this gemlog, I mainly speak about DevOps or programming-related subjects that touch too many parts of a system to be included in a git repository. 
 
 If you want to see the nicer things I made, I should redirect you to my Github.
 

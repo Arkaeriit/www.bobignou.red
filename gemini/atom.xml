@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <author>
+    <name>Maxime Bouillot</name>
+  </author>
+  <id>gemini://bobignou.red/atom.xml</id>
+  <title>bobignou.red</title>
+  <updated>2022-01-08T20:40:25+01:00</updated>
+  <entry>
+    <id>gemini://bobignou.red/posts/Gemini.gmi</id>
+    <link href="gemini://bobignou.red/posts/Gemini.gmi"/>
+    <title>Gemini</title>
+    <updated>2022-01-08T15:20:19+01:00</updated>
+    <dc:date>2022-01-08T15:20:19+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>gemini://bobignou.red/posts/Git-server.gmi</id>
+    <link href="gemini://bobignou.red/posts/Git-server.gmi"/>
+    <title>Git server</title>
+    <updated>2021-12-09T20:40:25+01:00</updated>
+    <dc:date>2021-12-09T20:40:25+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>gemini://bobignou.red/posts/Running-this-server.gmi</id>
+    <link href="gemini://bobignou.red/posts/Running-this-server.gmi"/>
+    <title>Running this server</title>
+    <updated>2021-11-18T17:47:59+01:00</updated>
+    <dc:date>2021-11-18T17:47:59+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>gemini://bobignou.red/posts/primes.gmi</id>
+    <link href="gemini://bobignou.red/posts/primes.gmi"/>
+    <title>Prime numbers</title>
+    <updated>2021-11-01T17:35:09+01:00</updated>
+    <dc:date>2021-11-01T17:35:09+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>gemini://bobignou.red/posts/BouingBouing.gmi</id>
+    <link href="gemini://bobignou.red/posts/BouingBouing.gmi"/>
+    <title>BouingBouing</title>
+    <updated>2021-10-28T22:24:38+01:00</updated>
+    <dc:date>2021-10-28T22:24:38+01:00</dc:date>
+  </entry>
+  <dc:date>2022-01-08T20:40:25+01:00</dc:date>
+</feed>
