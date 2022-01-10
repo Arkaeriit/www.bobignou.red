@@ -99,3 +99,6 @@ By default, Soft Serve only presents an SSH interface. It is a very nice SSH int
 I host the web interface under the URL git.bobignou.red[4].
 
 => https://git.bobignou.red 4: git.bobignou.red
+
+=> ../index.gmi Back to homepage
+

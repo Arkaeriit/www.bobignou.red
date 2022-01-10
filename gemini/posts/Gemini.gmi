@@ -33,3 +33,6 @@ You can then use it to go read this blog on the Geminispace with the command:
 ```
 amfora bobignou.red
 ```
+
+=> ../index.gmi Back to homepage
+

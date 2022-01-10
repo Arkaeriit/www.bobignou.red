@@ -190,3 +190,6 @@ It looks a lot like the configuration of the reverse proxy for the blog.
 The pages in this website are generated with hexo[2]. I mostly used the default configuration by following the steps in the official documentation.
 
 => https://github.com/hexojs/hexo 2: github.com/hexojs/hexo
+
+=> ../index.gmi Back to homepage
+
