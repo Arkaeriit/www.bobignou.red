@@ -6,7 +6,14 @@
   </author>
   <id>gemini://bobignou.red/atom.xml</id>
   <title>bobignou.red</title>
-  <updated>2022-01-08T20:40:25+01:00</updated>
+  <updated>2022-02-02T09:23:36+01:00</updated>
+  <entry>
+    <id>gemini://bobignou.red/posts/SSH-services.gmi</id>
+    <link href="gemini://bobignou.red/posts/SSH-services.gmi"/>
+    <title>SSH services</title>
+    <updated>2022-02-02T09:23:36+01:00</updated>
+    <dc:date>2022-02-02T09:23:36+01:00</dc:date>
+  </entry>
   <entry>
     <id>gemini://bobignou.red/posts/Gemini.gmi</id>
     <link href="gemini://bobignou.red/posts/Gemini.gmi"/>

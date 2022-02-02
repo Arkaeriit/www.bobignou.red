@@ -1,5 +1,6 @@
 # Bobignou.red
 
+=> posts/SSH-services.gmi        2022-02-02 - SSH services
 => posts/Gemini.gmi              2022-01-08 - Gemini
 => posts/Git-server.gmi          2021-12-09 - Git server
 => posts/Running-this-server.gmi 2021-11-18 - Running this server
