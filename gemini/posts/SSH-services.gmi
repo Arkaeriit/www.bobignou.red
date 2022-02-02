@@ -45,3 +45,5 @@ ssh -p 2244 snake@bobignou.red
 
 => SSH-services.pic/snek.png Playing Snek [IMG]
 
+=> ../index.gmi Back to homepage
+

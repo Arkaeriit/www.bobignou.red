@@ -6,7 +6,7 @@ I recently found a very nice Git server named Soft Serve[1]. This software offer
 
 This is quite a recent software so there is not a lot of documentation on how to install it. Thus, I want to talk here about how to configure and use it.
 
-=> https://bobignou.red/2021/12/09/Git-server/soft-serve.png A tasteful TUI [IMG]
+=> Git-server.pic/soft-serve.png A tasteful TUI [IMG]
 
 ## Setup
 
