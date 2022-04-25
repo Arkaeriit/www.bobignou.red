@@ -1,0 +1,4 @@
+git_ignored
+node_modules
+public
+big_files/100000000_primes
