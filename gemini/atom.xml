@@ -6,11 +6,18 @@
   </author>
   <id>gemini://bobignou.red/atom.xml</id>
   <title>bobignou.red</title>
-  <updated>2022-04-25T18:43:36+01:00</updated>
+  <updated>2022-05-06T20:19:05+01:00</updated>
   <entry>
-    <id>gemini://bobignou.red/posts/Making-a-Vim-plugin-with-python.gmi</id>
+    <id>gemini://bobignou.red/posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi</id>
+    <link href="gemini://bobignou.red/posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi"/>
+    <title>Writing "Hello world" from scratch part I: making a new ISA</title>
+    <updated>2022-05-06T20:19:05+01:00</updated>
+    <dc:date>2022-05-06T20:19:05+01:00</dc:date>
+  </entry>
+  <entry>
+    <id>gemini://bobignou.red/posts/Making-a-Vim-plugin-with-Python.gmi</id>
     <link href="gemini://bobignou.red/posts/Making-a-Vim-plugin-with-Python.gmi"/>
-    <title>SSH services</title>
+    <title>Making a Vim plugin with Python</title>
     <updated>2022-04-25T18:43:36+01:00</updated>
     <dc:date>2022-04-25T18:43:36+01:00</dc:date>
   </entry>
