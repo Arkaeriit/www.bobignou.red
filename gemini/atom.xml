@@ -6,7 +6,14 @@
   </author>
   <id>gemini://bobignou.red/atom.xml</id>
   <title>bobignou.red</title>
-  <updated>2022-05-06T20:19:05+01:00</updated>
+  <updated>2022-05-20T20:15:45+01:00</updated>
+  <entry>
+    <id>gemini://bobignou.red/posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi</id>
+    <link href="gemini://gemini.bobignou.red/posts/G-forces-at-Disneyland-Paris.gmi"/>
+    <title>G-forces at Disneyland Paris</title>
+    <updated>2022-05-20T15:45:10+01:00</updated>
+    <dc:date>2022-05-20T15:45:10+01:00</dc:date>
+  </entry>
   <entry>
     <id>gemini://bobignou.red/posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi</id>
     <link href="gemini://bobignou.red/posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi"/>
