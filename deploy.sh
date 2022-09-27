@@ -1,8 +1,10 @@
 #!/bin/sh
 
+HEXO='./node_modules/hexo/bin/hexo'
+
 # Web
-hexo clean &&
-    hexo generate && 
+$HEXO clean &&
+    $HEXO generate && 
     rm -v public/big_files/* &&
     ln -s $PWD/big_files/* $PWD/public/big_files/ &&
     sudo /bin/rm -rfv /srv/data/www/blog/* &&
