@@ -19,6 +19,8 @@ of the markdown body and the `metadata` key contains a dictionary with all the
 metadatas.
 """
 
+# --------------------------------- Renderer --------------------------------- #
+
 def render_body(md):
     "Renders the body of a markdown file into the body of an HTML file"
     ret = f'<h1>{md["metadata"]["title"]}</h1>\n'
@@ -63,5 +65,9 @@ def extract_md(filename):
                 "metadata": {},
                 "body": txt
             }
+
+# ------------------------------ Managing posts ------------------------------ #
+
+# ----------------------------------- Main ----------------------------------- #
 
 print(render_page(extract_md("source/index.md")))
