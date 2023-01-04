@@ -101,12 +101,17 @@ def sort_post(posts):
     posts.sort(key=k)
 
 def make_post_table(posts):
-    """From the list of posts, makes a markdown table with all of them."""
+    """From the list of posts, makes a HTML div table with all of them."""
     sort_post(posts)
     posts.reverse()
-    ret = "| | |\n|-|-|\n"
+    # md
+    md = "| | |\n|-|-|\n"
     for post in posts:
-        ret += f"|[{str(post['date']).split(' ')[0]}](posts/{post['name']}.html)|[{post['name'].replace('-', ' ')}](posts/{post['name']}.html)|\n"
+        md += f"|[{str(post['date']).split(' ')[0]}](posts/{post['name']}.html)|[{post['name'].replace('-', ' ')}](posts/{post['name']}.html)|\n"
+    # HTML
+    ret = '<div class="post_list">\n'
+    ret += markdown.markdown(md, extensions=["tables", "extra"])
+    ret += '</div>\n'
     return ret
 
 def fix_internals_path(html_txt, prefix):

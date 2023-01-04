@@ -96,3 +96,18 @@ a:active {
     color: #F0F0F0F0;
 }
 
+/* Limit picture sizes */
+img{
+    max-width:90%;
+    max-height:90%;
+}
+
+/* No border on post list */
+.post_list th {
+    border: 0px;
+}
+
+.post_list td {
+    border: 0px;
+}
+
