@@ -3,10 +3,7 @@
 HEXO='./node_modules/hexo/bin/hexo'
 
 # Web
-$HEXO clean &&
-    $HEXO generate && 
-    rm -v public/big_files/* &&
-    ln -s $PWD/big_files/* $PWD/public/big_files/ &&
+./renderer.py &&
     sudo /bin/rm -rfv /srv/data/www/blog/* &&
     sudo cp -rv public/* /srv/data/www/blog/ &&
     echo Done
