@@ -1,4 +1,4 @@
-# Writing Hello world from scratch part II: designing the CPU
+# Writing Hello world from scratch Part II: designing the CPU
 
 Designing the ISA and the simulator is fine and dandy but it does not beat running a custom CPU on real hardware. Unfortunately, I don't have tens of thousands of euros to make a custom chip. The best I can do is to run it on an FPGA. An FPGA is a chip with a lot of logic gates that can be wired together to make any logic circuit. And our CPU is a logic circuit.
 
