@@ -41,12 +41,9 @@ def render_head(md):
     """Generates the HTML header of a markdown document."""
     ret = '<meta charset="utf-8">\n'
     ret += HTLM_STYLE
-    try:
-        title = md["metadata"]["title"]
-        ret += "<title>" + title + "</title>\n"
-        desc = f'<meta name="description" content="{md["body"][0:50]}">'
-    except:
-        pass
+    title = md["metadata"]["title"]
+    ret += "<title>" + title + "</title>\n"
+    desc = f'<meta name="description" content="{md["body"][0:50]}">'
     return ret
 
 def render_page(md):
@@ -125,9 +122,6 @@ def fix_internals_path(html_txt, prefix):
         link = slice.split('"')[0]
         if link.find("/") < 0: # Not a full link
             ret += prefix
-            print(f"Partial link: {link}")
-        else:
-            print(f"Full link: {link}")
         ret += slice
     return ret
 
@@ -160,6 +154,5 @@ def make_website():
         except FileNotFoundError:
             pass
 
-# print(render_page(extract_md("source/index.md")))
-# print(make_post_table(list_posts()))
-make_website()
+if __name__ == "__main__":
+    make_website()
