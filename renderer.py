@@ -152,7 +152,9 @@ def make_website():
     os.mkdir(f"{TARGET_DIR}/posts")
     for post in list_posts():
         with open(f"{TARGET_DIR}/posts/{post['name']}.html", "w") as f:
-            f.write(fix_internals_path(render_page(extract_md(post['path'])), f"/posts/{post['name']}/"))
+            md = extract_md(post['path'])
+            md['body'] += "[Back to homepage](/)\n"
+            f.write(fix_internals_path(render_page(md), f"/posts/{post['name']}/"))
         try:
             shutil.copytree(f"{SOURCE_DIR}/posts/{post['name']}", f"{TARGET_DIR}/posts/{post['name']}")
         except FileNotFoundError:
