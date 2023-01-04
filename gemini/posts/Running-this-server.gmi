@@ -187,9 +187,9 @@ It looks a lot like the configuration of the reverse proxy for the blog.
 
 ## Website generation
 
-The pages in this website are generated with hexo[2]. I mostly used the default configuration by following the steps in the official documentation.
+The pages in the website are generated with a custom python script that can be seen at the website's repository[2].
 
-=> https://github.com/hexojs/hexo 2: github.com/hexojs/hexo
+=> https://git.bobignou.red/www.bobignou.red 2: https://git.bobignou.red/www.bobignou.red
 
 => ../index.gmi Back to homepage
 

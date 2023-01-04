@@ -32,7 +32,7 @@ Furthermore a [machine on Hack The Box](https://app.hackthebox.com/machines/398)
 ## Snek
 
 ```
-ssh -p 2244 snake@bobignou.red 
+ssh snake@bobignou.red 
 ```
 
 ![Playing Snek](snek.png)
