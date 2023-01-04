@@ -1,15 +1,15 @@
 # Bobignou.red
 
-=> posts/DevTerm-R-01-Review.gmi                                      2022-10-18 - DevTerm R-01 Review
-=> posts/G-forces-at-Disneyland-Paris.gmi                             2022-05-20 - G-forces at Disneyland Paris
-=> posts/Writing-Hello-world-from-scratch-part-I-making-a-new-ISA.gmi 2022-05-06 - Writing Hello world from scratch part I: making a new ISA
-=> posts/Making-a-Vim-plugin-with-Python.gmi                          2022-04-25 - Making a Vim plugin with Python
-=> posts/SSH-services.gmi                                             2022-02-02 - SSH services
-=> posts/Gemini.gmi                                                   2022-01-08 - Gemini
-=> posts/Git-server.gmi                                               2021-12-09 - Git server
-=> posts/Running-this-server.gmi                                      2021-11-18 - Running this server
-=> posts/primes.gmi                                                   2021-11-01 - Prime numbers
-=> posts/BouingBouing.gmi                                             2021-10-28 - BouingBouing
+=> posts/DevTerm-R-01-Review.gmi                     2022-10-18 - DevTerm R-01 Review
+=> posts/G-forces-at-Disneyland-Paris.gmi            2022-05-20 - G-forces at Disneyland Paris
+=> posts/Writing-Hello-world-from-scratch-Part-I.gmi 2022-05-06 - Writing Hello world from scratch part I: making a new ISA
+=> posts/Making-a-Vim-plugin-with-Python.gmi         2022-04-25 - Making a Vim plugin with Python
+=> posts/SSH-services.gmi                            2022-02-02 - SSH services
+=> posts/Gemini.gmi                                  2022-01-08 - Gemini
+=> posts/Git-server.gmi                              2021-12-09 - Git server
+=> posts/Running-this-server.gmi                     2021-11-18 - Running this server
+=> posts/Primes-numbers.gmi                          2021-11-01 - Prime numbers
+=> posts/BouingBouing.gmi                            2021-10-28 - BouingBouing
 
 ## What to find here
 

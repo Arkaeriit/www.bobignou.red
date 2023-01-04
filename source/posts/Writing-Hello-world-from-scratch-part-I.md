@@ -1,10 +1,10 @@
 ---
-title: Writing Hello, world! from scratch
+title: Writing Hello world from scratch Part I
 date: 2022-05-06 19:13:13
 tags:
 ---
 
-# Part I: making a new ISA
+# Making a new ISA
 
  “If you wish to make an apple pie from scratch, you must first invent the universe.”
 
