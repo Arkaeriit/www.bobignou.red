@@ -140,6 +140,10 @@ def make_website():
     except FileNotFoundError:
         pass
     os.mkdir(TARGET_DIR)
+    try:
+        shutil.copyfile(f"{STATIC_DIR}/favicon.ico", f"{TARGET_DIR}/favicon.ico")
+    except FileNotFoundError:
+        pass
     shutil.copytree(STATIC_DIR, f"{TARGET_DIR}/static")
     index = extract_md(f"{SOURCE_DIR}/index.md")
     index["body"] = make_post_table(list_posts()) + index["body"]
