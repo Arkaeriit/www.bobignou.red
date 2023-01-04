@@ -15,7 +15,7 @@ I also host my [personal Git server](https://git.bobignou.red).
  
 If you want some fun, you could always type the command: 
 ```shell 
-ssh -p 2244 snake@bobignou.red 
+ssh snake@bobignou.red 
 ``` 
  
 If you prefer Gemini over the web, you can find this blog as a Gemini capsule at the URLs `gemini.bobignou.red` and `bobignou.red`.

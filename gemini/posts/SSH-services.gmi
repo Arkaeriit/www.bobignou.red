@@ -40,7 +40,7 @@ Analog City[7] is a text-board running over SSH. If you want to join the other *
 ## Snek
 
 ```
-ssh -p 2244 snake@bobignou.red 
+ssh snake@bobignou.red 
 ```
 
 => SSH-services.pic/snek.png Playing Snek [IMG]
