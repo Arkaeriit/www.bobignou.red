@@ -29,6 +29,9 @@ STATIC_DIR = "static"
 SOURCE_DIR = "source"
 TARGET_DIR = "public"
 
+WEBSITE = "bobignou.red"
+AUTHOR_NAME = "Maxime Bouillot"
+
 # --------------------------------- Renderer --------------------------------- #
 
 def render_body(md):
@@ -125,6 +128,40 @@ def fix_internals_path(html_txt, prefix):
         ret += slice
     return ret
 
+# --------------------------------- Atom feed -------------------------------- #
+
+def make_atom_entry(md):
+    """From a post dictionary, makes the atom entry."""
+    link = f"https://{WEBSITE}/posts/{md['metadata']['title']}.html".replace(" ", "-")
+    ret = "<entry>\n"
+    ret += f'<id>{link}</id>\n'
+    ret += f'<link href="{link}"/>\n'
+    ret += f'<title>{md["metadata"]["title"]}</title>\n'
+    ret += f'<updated>{str(md["metadata"]["date"]).replace(" ", "T")}</updated>\n'
+    ret += f'<dc:date>{str(md["metadata"]["date"]).replace(" ", "T")}</dc:date>\n'
+    ret += f'</entry>\n'
+    return ret
+
+def make_atom_feed():
+    """Make the whole atom feed.""" 
+    posts = list_posts()
+    sort_post(posts)
+    posts.reverse()
+
+    ret =  '''<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+xmlns:dc="http://purl.org/dc/elements/1.1/">\n'''
+    ret += f'<author><name>{AUTHOR_NAME}</name></author>\n'
+    ret += f'<id>https://{WEBSITE}/atom.xml</id>\n'
+    ret += f'<title>{WEBSITE}</title>\n'
+    ret += f'<updated>{str(posts[0]["date"]).replace(" ", "T")}</updated>\n'
+    ret += f'<dc:date>{str(posts[0]["date"]).replace(" ", "T")}</dc:date>\n'
+    for post in posts:
+        md = extract_md(post['path'])
+        ret += make_atom_entry(md)
+    ret += f'</feed>\n'
+    return ret
+
 # ----------------------------------- Main ----------------------------------- #
 
 def make_website():
@@ -153,6 +190,9 @@ def make_website():
             shutil.copytree(f"{SOURCE_DIR}/posts/{post['name']}", f"{TARGET_DIR}/posts/{post['name']}")
         except FileNotFoundError:
             pass
+    with open(f"{TARGET_DIR}/atom.xml", "w") as f:
+        f.write(make_atom_feed())
 
 if __name__ == "__main__":
     make_website()
+
