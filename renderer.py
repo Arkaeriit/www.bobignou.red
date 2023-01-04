@@ -132,6 +132,11 @@ def fix_internals_path(html_txt, prefix):
 
 def make_atom_entry(md):
     """From a post dictionary, makes the atom entry."""
+    summary = ""
+    for line in md["body"].split("\n"):
+        if len(line) > 1 and line[0] != "#":
+            summary = line
+            break
     link = f"https://{WEBSITE}/posts/{md['metadata']['title']}.html".replace(" ", "-")
     ret = "<entry>\n"
     ret += f'<id>{link}</id>\n'
@@ -139,6 +144,7 @@ def make_atom_entry(md):
     ret += f'<title>{md["metadata"]["title"]}</title>\n'
     ret += f'<updated>{str(md["metadata"]["date"]).replace(" ", "T")}</updated>\n'
     ret += f'<dc:date>{str(md["metadata"]["date"]).replace(" ", "T")}</dc:date>\n'
+    ret += f'<summary type="html">{summary}</summary>\n'
     ret += f'</entry>\n'
     return ret
 
