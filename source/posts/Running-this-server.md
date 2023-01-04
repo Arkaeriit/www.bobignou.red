@@ -160,5 +160,5 @@ server {
 It looks a lot like the configuration of the reverse proxy for the blog.
 
 ## Website generation
-The pages in this website are generated with [hexo](https://github.com/hexojs/hexo). I mostly used the default configuration by following the steps in the official documentation.
+The pages in this website are generated with a custom python script that can be seen at the [website's repository](https://git.bobignou.red/www.bobignou.red).
 
