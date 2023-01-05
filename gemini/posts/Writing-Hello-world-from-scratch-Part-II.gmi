@@ -89,7 +89,7 @@ label printc
 
 To ensure that everything works well, it is important to test the CPU, its code, and its peripherals. For example, here is the result of the simulation that sends "Hello, world!" over a UART TX line.
 
-=> Writing-Hello-world-from-scratch-part-II/hello_world_uart_simu.png Simulation of the program [IMG]
+=> Writing-Hello-world-from-scratch-Part-II.pic/hello_world_uart_simu.png Simulation of the program [IMG]
 
 Note how the TX line moves a bit each time a character is sent.
 
@@ -113,7 +113,7 @@ The bootloader is a normal program that I write into a ROM in the MCU. It is exe
 
 Here is a small clip of me uploading the "Hello, world!" program to the processor and its reply.
 
-=> Writing-Hello-world-from-scratch-part-II/hello_world_uart.gif The MCU printing "Hello, world!" over a serial link [IMG]
+=> Writing-Hello-world-from-scratch-Part-II.pic/hello_world_uart.gif The MCU printing "Hello, world!" over a serial link [IMG]
 
 ## Next step
 
