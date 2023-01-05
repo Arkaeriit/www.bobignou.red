@@ -157,9 +157,9 @@ def make_atom_feed():
     ret =  '''<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"
 xmlns:dc="http://purl.org/dc/elements/1.1/">\n'''
+    ret += f'<title>{WEBSITE}</title>\n'
     ret += f'<author><name>{AUTHOR_NAME}</name></author>\n'
     ret += f'<id>https://{WEBSITE}/atom.xml</id>\n'
-    ret += f'<title>{WEBSITE}</title>\n'
     ret += f'<updated>{str(posts[0]["date"]).replace(" ", "T")}</updated>\n'
     ret += f'<dc:date>{str(posts[0]["date"]).replace(" ", "T")}</dc:date>\n'
     for post in posts:
