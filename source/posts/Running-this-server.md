@@ -24,11 +24,11 @@ protocol=namecheap
 server=dynamicdns.park-your-domain.com
 login=<domain name>
 password='<Dynamic DNS Password>'
-<Host>
+<Host1>, <Host2>, ...
 ```
-Write one of such configurations for each subdomain.
 
 Then, you can start dd client with systemd through the commands `systemctl enable ddclient` and `systemctl start ddclient`. You can check that it works well in two ways.
+
 * You can check the result of `systemctl status ddclient`.
 * You can verify that your IP has been added in the column 'Value' in Namecheap's advanced DNS.
 
