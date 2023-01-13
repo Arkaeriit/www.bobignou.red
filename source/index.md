@@ -22,7 +22,7 @@ If you prefer Gemini over the web, you can find this blog as a Gemini capsule at
 
 ## Contact
 
-If you can contact me, you can send an email to <a href = "mailto: maxbouillot@gmail.com">maxbouillot@gmail.com</a>.
+If you want to contact me, you can send an email to <a href = "mailto: maxbouillot@gmail.com">maxbouillot@gmail.com</a>.
 
 <a href="/atom.xml"><img src="/static/rss.svg" width="20" height="20"></a>
 

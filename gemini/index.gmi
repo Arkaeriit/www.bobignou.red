@@ -38,5 +38,5 @@ ssh snake@bobignou.red
 
 ## Contact
 
-If you can contact me, you can send an email to maxbouillot@gmail.com.
+If you want to contact me, you can send an email to maxbouillot@gmail.com.
 
