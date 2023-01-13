@@ -100,14 +100,14 @@ def sort_post(posts):
         return p["date"]
     posts.sort(key=k)
 
-def make_post_table(posts):
+def make_post_table(posts, path_prefix):
     """From the list of posts, makes a HTML div table with all of them."""
     sort_post(posts)
     posts.reverse()
     # md
     md = "| | |\n|-|-|\n"
     for post in posts:
-        md += f"|[{str(post['date']).split(' ')[0]}](posts/{post['name']}.html)|[{post['name'].replace('-', ' ')}](posts/{post['name']}.html)|\n"
+        md += f"|[{str(post['date']).split(' ')[0]}]({path_prefix}{post['name']}.html)|[{post['name'].replace('-', ' ')}]({path_prefix}{post['name']}.html)|\n"
     # HTML
     ret = '<div class="post_list">\n'
     ret += markdown.markdown(md, extensions=["tables", "extra"])
@@ -182,11 +182,23 @@ def make_website():
     except FileNotFoundError:
         pass
     shutil.copytree(STATIC_DIR, f"{TARGET_DIR}/static")
+    # Index
     index = extract_md(f"{SOURCE_DIR}/index.md")
-    index["body"] = make_post_table(list_posts()) + index["body"]
+    index["body"] = make_post_table(list_posts(), "posts/") + index["body"]
     with open(f"{TARGET_DIR}/index.html", "w") as f:
         f.write(render_page(index))
+    # Posts
     os.mkdir(f"{TARGET_DIR}/posts")
+    ## Posts list
+    post_list_md = {
+            "body": make_post_table(list_posts(), ""),
+            "metadata": {
+                "title": "posts",
+                },
+            }
+    with open(f"{TARGET_DIR}/posts/index.html", "w") as f:
+        f.write(render_page(post_list_md))
+    ## All posts
     for post in list_posts():
         with open(f"{TARGET_DIR}/posts/{post['name']}.html", "w") as f:
             md = extract_md(post['path'])
