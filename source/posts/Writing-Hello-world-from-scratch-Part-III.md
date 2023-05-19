@@ -10,11 +10,11 @@ In the [last post](Writing-Hello-world-from-scratch-Part-II.html), I connected a
 
 # VGA
 
-One of the easiest ways to send video to a _somewhat_ modern screen is as a VGA signal. It is quite simple to send a VGA signal, the pixels are sent to the screen one after the other, from left to right and from top to bottom.
+One of the easiest ways to send video to a _somewhat_ modern screen as a VGA signal. It is quite simple to send a VGA signal, the pixels are sent to the screen one after the other, from left to right and from top to bottom.
 
 ## Sync signal
 
-To tell the monitor which position on the screen we are trying to draw, sync signal. On the `h_sync` line, a small pulse is sent after a full line has been drawn. On the `v_sync` line, a pulse is sent after the whole screen has been sent. The shape and the frequency of those signals are what define the refresh rate and the resolution.
+To tell the monitor which position on the screen we are trying to draw, two sync signal are used. On the `h_sync` line, a small pulse is sent after a full line has been drawn. On the `v_sync` line, a pulse is sent after the whole screen has been sent. The shape and the frequency of those signals are what define the refresh rate and the resolution.
 
 Here are those signals from a simulation:
 
@@ -53,7 +53,7 @@ The GPU got multiple modules. The most important one is the timing generator, wh
 
 There are two layers in that GPU. Firstly, a bitmap layer. It simply stores a color for each pixel and outputs it when the timing generator gives that pixel.
 
-Then, there is a text layer. That layer store packs of background color, foreground color, and letter. When a pixel must be drawn, it first computes which letter it corresponds to, fetches it for memory, passes it through a character ROM to see if the pixel is in the foreground or the background of the letter, and then color it accordingly.
+Then, there is a text layer. That layer stores packs of background color, foreground color, and letter. When a pixel must be drawn, it first computes which letter it corresponds to, fetches it for memory, passes it through a character ROM to see if the pixel is in the foreground or the background of the letter, and then color it accordingly.
 
 The combination between the two layers is made with α blending. The pixels on the bitmap layer as stored with RGBA components.
 
@@ -119,7 +119,7 @@ label draw_hearth
 
 # Conclusion
 
-Here is the heath along with some text on the text layer. Not the α blending between the heath and the "L" of "Love".
+Here is the hearth on the bitmap layer along with a message on the text layer. Note the α blending between the hearth and the "L" of "Love".
 
 ![The image drawn on the screen](final_picture.jpg)
 
