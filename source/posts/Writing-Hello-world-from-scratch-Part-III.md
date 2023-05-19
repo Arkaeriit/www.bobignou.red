@@ -6,7 +6,7 @@ tags:
 
 # State of things
 
-In the [last post](posts/Writing-Hello-world-from-scratch-Part-II.html), I connected a CPU to a UART to print "Hello, world over this serial link. Even if the endeavor is quite fun, it's not as impressive as writing it on a screen. To do so, we would need some sort of GPU.
+In the [last post](Writing-Hello-world-from-scratch-Part-II.html), I connected a CPU to a UART to print "Hello, world over this serial link. Even if the endeavor is quite fun, it's not as impressive as writing it on a screen. To do so, we would need some sort of GPU.
 
 # VGA
 
