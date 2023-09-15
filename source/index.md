@@ -1,8 +1,5 @@
----
-layout: page
-title: Bobignou.red
-date: 2020-12-13
----
+<h1> Hello! <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 30px> Welcome to Bobignou.red!</h1>
+
 ## What to find here 
 On this blog, I mainly speak about tech related subjects that touch too many parts of a system to be included in a git repository. 
  
