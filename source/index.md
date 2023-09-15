@@ -10,10 +10,7 @@ I have included some other fun stuff on this site including:
 
 - A [Cyberlander text board](https://cyberland.bobignou.red) for discussions.
 - A [personal Git server](https://git.bobignou.red) which hosts my projects.
-- A fun command line game, just type the following command in your terminal:
-    ```
-    ssh snake@bobignou.red 
-    ```
+- A fun command line game, just type the following command in your terminal: `ssh snake@bobignou.red`.
 - A Gemini capsule of this blog, find it at `gemini.bobignou.red` and `bobignou.red`.
 
 ## Contact
