@@ -18,7 +18,10 @@ I have included some other fun stuff on this site including:
 
 ## Contact
 
-If you want to contact me, you can send an email to <a href = "mailto: maxbouillot@gmail.com">maxbouillot@gmail.com</a>.
+If you want to contact me, you can send an email to [maxbouillot@gmail.com](mailto:maxbouillot@gmail.com). 
 
-<a href="/atom.xml"><img src="/static/rss.svg" width="20" height="20"></a>
+For staying updated with my latest posts, you can subscribe to my RSS feed:
+
+[![RSS](/static/rss.svg)](/atom.xml)
+
 
